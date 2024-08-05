@@ -1,0 +1,47 @@
+<!-- CSS Selectors
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+1. Simple selectors (select elements based on name, id, class)
+2. Combinator selectors (select elements based on a specific relationship between them)
+3. Pseudo-class selectors (select elements based on a certain state)
+4. Pseudo-elements selectors (select and style a part of an element)
+5. Attribute selectors (select elements based on an attribute or attribute value) -->
+
+
+    <!-- CSS Combinators
+    1. descendant selector (space)
+    2. child selector (>)
+    3. adjacent sibling selector (+)
+    4. general sibling selector (~) -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+           div ~ p{
+            background-color: red;
+           } 
+        </style>
+    </head>
+    <body>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <div>
+            <p>paragraph3</p>
+            <section>
+                <p>paragraph4</p>
+            </section>
+        </div>
+        <p>paragraph5</p>
+        <p>paragraph6</p>
+         <p>paragraph7</p>
+          <div> <p>paragraph8</p></div>
+         
+    </body>
+    </html>
+
