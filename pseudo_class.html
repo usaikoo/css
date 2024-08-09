@@ -1,0 +1,38 @@
+<!-- What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* initial state link color */
+        /* selector:visited {property:value} */
+        a:link{
+            color: red;
+        }
+        /* after visited state */
+        a:visited{
+            color: green;
+        }
+        /* hover state */
+        a:hover{
+            color: brown;
+        }
+        a:active{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="example.html" target="_blank"> click me </a>
+</body>
+</html>
